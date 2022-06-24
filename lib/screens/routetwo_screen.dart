@@ -5,8 +5,9 @@ class RouteTwoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(title: const Text("Route Two Screen")),
+      body: const Center(
         child: Text('RouteTwoScreen'),
       ),
     );

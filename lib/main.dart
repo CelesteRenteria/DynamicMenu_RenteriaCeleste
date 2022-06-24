@@ -7,20 +7,22 @@ import 'package:flutter_application_3/screens/listview_screen.dart';
 import 'package:flutter_application_3/screens/listview_screen_2.dart';
 import 'package:flutter_application_3/screens/routeone_screen.dart';
 import 'package:flutter_application_3/screens/routetwo_screen.dart';
+import 'package:flutter_application_3/themes/app_themes.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  static const Color primary = Colors.amberAccent;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'MaterialApp',
-      initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.getAppRoutes(),
-      onGenerateRoute: AppRoutes.onGeneratedRoute,
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'MaterialApp',
+        initialRoute: AppRoutes.initialRoute,
+        routes: AppRoutes.getAppRoutes(),
+        onGenerateRoute: AppRoutes.onGeneratedRoute,
+        theme: AppThemes.amberLightTheme);
   }
 }

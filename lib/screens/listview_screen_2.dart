@@ -9,9 +9,7 @@ class ListView2Screen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
             title: const Text("List View Screen Type 2"),
-            backgroundColor: Colors.amber,
-            //Elevation extends the AppBar, in android is like a shadow in iOS the altura si incrementa
-            elevation: 4),
+            ),
         body: ListView.separated(
             // ignore: prefer_const_constructors
             itemBuilder: (context, index) => ListTile(

@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title:const Text("Home Screen")),
         body: ListView.separated(
       itemBuilder: (context, index) => ListTile(
         leading: Icon(menuOptions[index].icon),
